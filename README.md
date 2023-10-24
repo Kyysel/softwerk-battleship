@@ -1,12 +1,11 @@
-# battleship_softwerk
+# Softwerk Battleship - Anthime Huchet
 ## How to use
-**/!\ Current build crashes after the first phase of the game due to an unexpected error. The program runs fine in the unity editor.**
 - Windows build only
-- Unzip the archive an the Release folder.
-- Execute the file "Battleship.exe"
+- Unzip the archive ``WinBuild-Fixed`` in the Releases folder.
+- Execute the file "Battleship.exe" for the fixed version.
 </br>
 
-- The only way to run the program correctly currently is to use the Unity Game Engine editor in version 2022.3 (LTS)
+- The project can also be run using Unity Game Engine editor in version 2022.3 (LTS)
 - Open the project with Unity selecting the "Battleship" folder at the root of the repository.
 - Click on play button at the top of the screen.
 
@@ -54,7 +53,6 @@ The project contains one Scene, in which we have all the game objects that are u
  
 ## Evolutions
 The project does not contain test cases at the moment as I focused on having something that worked in the given amount of time.</br>
-Both web and windows versions of the release build have an issue where the GridManager does not create the grid dictionnary containing the tiles. I have tried many ways of handling it, but ultimately didn’t find a constant fix. (Sometimes, just restarting the Unity Editor fixed the problem on my end, but it’s random and not reliable. It feels out of hand)</br>
 When we rotate the ship, we don’t have a direct visual indication if the ship can be placed or not. We have to move the mouse to another tile to refresh the check --> adding a specific case in the code for that would fix the issue.</br>
 The UI isn’t the cleanest as on some displays the UI elements might appear out of screen (on resolutions different than 16:9)</br>
 There is a lack of information on the UI for the player to know which grid corresponds to what, and what he is supposed to do. (issue only for the player)</br>
