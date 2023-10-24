@@ -16,12 +16,6 @@ public abstract class GridManager : MonoBehaviour
     public Dictionary<Vector2, Tile> gridDictionnary;
     
     
-    // Start is called before the first frame update
-    void Awake()
-    {
-        gridDictionnary = new Dictionary<Vector2, Tile>();
-    }
-
     void Start()
     {
         GenerateGrid(gridOrigin[0], gridOrigin[1]);
@@ -29,6 +23,7 @@ public abstract class GridManager : MonoBehaviour
 
     void GenerateGrid(int originX, int originY)
     {
+        gridDictionnary = new Dictionary<Vector2, Tile>();
         for (int x=originX; x < originX+_width; x++)
         {
             for (int y=originY; y < originY+_height; y++)

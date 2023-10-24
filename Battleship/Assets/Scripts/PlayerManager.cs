@@ -17,6 +17,12 @@ public class PlayerManager : MonoBehaviour
     public string playerName;
     public PlayerManager otherPlayer;
 
+    private void Awake()
+    {
+        enemyGrid = EnemyGrid.GetComponent<EnemyGrid>();
+        ownGrid = OwnGrid.GetComponent<OwnGrid>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,9 +40,6 @@ public class PlayerManager : MonoBehaviour
         shipsSunk.Add("Destroyer", false);
         shipsSunk.Add("Patrol Boat", false);
         hasPlayed = false;
-        
-        enemyGrid = EnemyGrid.GetComponent<EnemyGrid>();
-        ownGrid = OwnGrid.GetComponent<OwnGrid>();
     }
 
     public void PrepareSetup()

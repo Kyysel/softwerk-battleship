@@ -69,13 +69,15 @@ public class GameManager : MonoBehaviour
     {
         // We wait set amount of time before going to next player
         yield return new WaitForSeconds(waitTimeForNextTurn);
-        player.RemoveTileHighlights();
+        
         
         statusMessage.text = "Player " + player.playerName + " is playing";
         
         visionBlocker.SetActive(true);
         // wait for enter key to be pressed before showing other player’s boards
         StartCoroutine(HandleWaitScreen());
+        
+        player.RemoveTileHighlights();
     }
 
     public void EndGame(string playerName)
