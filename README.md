@@ -33,7 +33,8 @@ The project contains one Scene, in which we have all the game objects that are u
   - 1 OwnGrid object on which he can place ships and see where the enemy attacks
   - 1 EnemyGrid object to attack and see where he has hit the enemy ships
   - 1 Canvas object with buttons used to place ships during the first phase of the game
- </br>![scene](https://github.com/Kyysel/battleship_softwerk/assets/39512699/a1b4e4f1-9b4c-48d3-ac44-e1d25e7c14a9)
+ </br>![scene](https://github.com/Kyysel/softwerk-battleship/assets/39512699/2cfe1a3e-5fde-4e28-a359-87a2901afe48)
+
 
 ### Script Architecture
 - The ``GameManager`` Script :
